@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🐾 Pet Gallery</title>
+  <link href="./output.css" rel="stylesheet" />
+</head>
+<body class="min-h-screen bg-gradient-to-br from-yellow-200 via-pink-100 to-rose-200 text-gray-800">
+
+  <div class="max-w-6xl mx-auto p-6">
+    <h1 class="text-5xl font-extrabold mb-8 text-center text-rose-700 drop-shadow-sm">🐾 Pet Gallery</h1>
+
+    <!-- Category Buttons -->
+    <div class="flex flex-wrap justify-center gap-4 mb-10">
+      <button class="category-btn px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-full shadow-lg" data-category="dogs">Dogs</button>
+      <button class="category-btn px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded-full shadow-lg" data-category="cats">Cats</button>
+      <button class="category-btn px-6 py-3 bg-pink-500 hover:bg-pink-600 text-white font-bold rounded-full shadow-lg" data-category="hamsters">Hamsters</button>
+    </div>
+
+    <!-- Gallery -->
+    <div id="gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <!-- Dynamic pet cards will appear here -->
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
